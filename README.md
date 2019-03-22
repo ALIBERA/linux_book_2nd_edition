@@ -1,5 +1,5 @@
  # linux_book_2nd_edition
-linux driver development for embedded processors 2nd edition
+Linux Driver Development for Embedded Processors 2nd Edition
 
 The source code of the drivers and device tree for NXP i.MX7, Microchip SAMA5D27 and Broadcomm BCM2837 processors can be downloaded from drivers_source_code.zip. These drivers have been implemented using the v4.9 LTS kernel. The evaluation boards and their configurations used to develop these drivers are explained in detail throughout this book.
 
