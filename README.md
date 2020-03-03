@@ -24,8 +24,11 @@ https://source.codeaurora.org/external/imx/imx-manifest/about/
 You have to replace the instructions in pag.34 of "Chapter 1 : Building the System" for the next ones:
 
 ~$ mkdir fsl-release-bsp
+
 ~$ cd fsl-release-bsp/
+
 ~/fsl-release-bsp$ git config --global user.name "Your Name"
+
 ~/fsl-release-bsp$ git config --global user.email "Your Email"
 
 ~/fsl-release-bsp$ git config --list
