@@ -29,6 +29,7 @@ You have to replace the instructions in pag.34 of "Chapter 1 : Building the Syst
 ~/fsl-release-bsp$ git config --global user.email "Your Email"
 ~/fsl-release-bsp$ git config --list
 ~/fsl-release-bsp$ repo init -u https://source.codeaurora.org/external/imx/fsl-arm-yocto-bsp.git -b imx-morty -m imx-4.9.11-1.0.0_ga.xml
+
 ~/fsl-release-bsp$ repo sync -j4
 
 ~/fsl-release-bsp$ DISTRO=fsl-imx-x11 MACHINE=imx7dsabresd source fsl-setup-release.sh -b build_imx7d
