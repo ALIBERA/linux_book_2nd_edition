@@ -49,5 +49,7 @@ IMX_FIRMWARE_SRC ?= "git://github.com/NXP/imx-firmware;protocol=git"
 
 Since the beginning of March 2020, the Linux drivers included in this book have been adapted to run on the NXP i.MX 7Dual MCIMX7SABRE board using Linux kernel v4.19 LTS. The NXP i.MX 7Dual Linux drivers and device tree settings are included in the linux_4.19_imx7_drivers.zip file, which can be downloaded from the Github repository of this book. The NXP i.MX 7Dual Practical Labs Setup is described in the Linux_4.19_i.MX7D_practical_labs document included in this repository.
 
+Since the end of March 2020, the Linux drivers included in this book have been adapted to run on the ST STM32MP1 processor using the STM32MP157C-DK2 board and Linux kernel v4.19 LTS. The ST STM32MP1 Linux drivers and device tree settings are included in the linux_4.19_stm32mp1_drivers.zip file, which can be downloaded from the Github repository of this book. The NXP STM32MP1 Practical Labs Setup is described in the Linux_4.19_STM32MP1_practical_labs document included in this repository.
+
 
 
