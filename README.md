@@ -51,5 +51,7 @@ Since the beginning of March 2020, the Linux drivers included in this book have 
 
 Since the end of March 2020, the Linux drivers included in this book have been adapted to run on the ST STM32MP1 processor using the STM32MP157C-DK2 board and Linux kernel v4.19 LTS. The ST STM32MP1 Linux drivers and device tree settings are included in the linux_4.19_stm32mp1_drivers.zip file, which can be downloaded from the Github repository of this book. The NXP STM32MP1 Practical Labs Setup is described in the Linux_4.19_STM32MP1_practical_labs document included in this repository.
 
+The document "Practical Labs Hardware" has been added to the github to detail all the needed harware to test the lab examples included in this book.
+
 
 
