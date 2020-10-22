@@ -57,6 +57,8 @@ Since the beginning of September 2020, a new lab has been added to the labs of C
 
 Since the beginning of October 2020, a new lab has been added to the labs of Chapter 7 to reinforce the concepts of creating NESTED THREADED GPIO irqchips drivers, and apply in a practical way how to create a gpio controller with interrupt capabilities. You will also develop an user application that request GPIO interrupts from user space using the GPIOlib APIs. A new low cost evaluation board based on the CY8C9520A device will be used, thus expanding the number of evaluation boards that can be adquired to practice with the theory explained in Chapter 7. This new lab is included in the linux_5.4_CY8C9520A_driver.zip file and can be downloaded from this GitHub repository. The CY8C9520A driver is explained in the Linux_5.4_STM32MP1_practical_labs document included in this repository.
 
+Since the end of October 2020, a new lab has been added to the labs of Chapter 7, that explains how to create pinctrl and pwm controller drivers. The evaluation board based on the CY8C9520A device will be used to develop this driver. This new lab is included in the linux_5.4_CY8C9520A_pwm_pinctrl.zip file and can be downloaded from this GitHub repository. The CY8C9520A_pwm_pinctrl driver is explained in the Linux_5.4_STM32MP1_practical_labs document included in this repository.
+
 The document "Practical Labs Hardware" has been added to the github to detail all the needed harware to test the lab examples included in this book.
 
 
