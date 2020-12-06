@@ -61,7 +61,7 @@ Since the end of October 2020, a new lab has been added to the labs of Chapter 7
 
 Since the end of November 2020, the Linux drivers included in this book have been adapted to run on the Raspberry Pi 4 Model B and Raspberry Pi 3 Model B boards using the Linux kernel version 5.4 LTS. The kernel 5.4 modules developed for these boards are included in the linux_5.4_rpi4_drivers.zip and linux_5.4_rpi3_drivers.zip files and can be downloaded from this GitHub repository. The Practical Labs Setup are described in the Linux_5.4_rpi4_practical_labs and Linux_5.4_rpi3_practical_labs documents included in this repository. The new MAX11300, CY8C9520A and CY8C9520A_pwm_pinctrl drivers have been ported to the Raspberry Pi 4 Model B and Raspberry Pi 3 Model B boards using kernel 5.4 and are included in the linux_5.4_rpi4_drivers.zip and linux_5.4_rpi3_drivers.zip files.
 
-The document "Practical Labs Hardware" has been added to the github to detail all the needed harware to test the lab examples included in this book.
+The document "Practical Labs Hardware" has been added to the github to detail all the needed hardware to test the lab examples included in this book.
 
 
 
