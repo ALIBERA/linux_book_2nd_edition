@@ -53,13 +53,37 @@ Since the end of March 2020, the Linux drivers included in this book have been a
 
 Since the end of July 2020, the Linux drivers included in this book have been adapted to run on the ST STM32MP1 processor using the STM32MP157C-DK2 board and Linux kernel v5.4 LTS. The ST STM32MP1 Linux drivers and device tree settings are included in the linux_5.4_stm32mp1_drivers.zip file, which can be downloaded from the Github repository of this book. The STM32MP1 Practical Labs Setup is described in the Linux_5.4_STM32MP1_practical_labs document included in this repository. 
 
-Since the beginning of September 2020, a new lab has been added to the labs of Chapter 11 to reinforce the concepts of creating IIO drivers, and apply in a practical way the creation of a gpio controller driver, reinforcing thus the theory developed during Chapter 5. This new driver will control the Maxim MAX11300 PIXI device. This lab can be downloaded from the Github repository of this book. The MAX11300 driver is explained in the Linux_5.4_STM32MP1_practical_labs document included in this repository and the driver source files are included in the linux_5.4_max11300_driver.zip file. In this lab, you will also see how to write applications to control GPIOs by using two different methods. The first method will control the GPIO using a device node and the second method will control the GPIO using the functions of the libgpiod library. You will learn how to configure Eclipse to build and debug these applications.
+Since the beginning of September 2020, a new LAB 11.5 has been added to the labs of Chapter 11 to reinforce the concepts of creating IIO drivers, and apply in a practical way the creation of a gpio controller driver, reinforcing thus the theory developed during Chapter 11. This new driver will control the Maxim MAX11300 PIXI device. This lab can be downloaded from the Github repository of this book. In this lab, you will also see how to write applications to control GPIOs by using two different methods. The first method will control the GPIO using a device node and the second method will control the GPIO using the functions of the libgpiod library. You will learn how to configure Eclipse to build and debug these applications. You can choose between several processor boards to execute this lab:
 
-Since the beginning of October 2020, a new lab has been added to the labs of Chapter 7 to reinforce the concepts of creating NESTED THREADED GPIO irqchips drivers, and apply in a practical way how to create a gpio controller with interrupt capabilities. You will also develop an user application that request GPIO interrupts from user space using the GPIOlib APIs. A new low cost evaluation board based on the CY8C9520A device will be used, thus expanding the number of evaluation boards that can be adquired to practice with the theory explained in Chapter 7. This new lab is included in the linux_5.4_CY8C9520A_driver.zip file and can be downloaded from this GitHub repository. The CY8C9520A driver is explained in the Linux_5.4_STM32MP1_practical_labs document included in this repository.
+•	STM32MP157C-DK2 board from ST: The instructions to execute this lab are included in the Linux_5.4_STM32MP1_practical_labs document.
+•	Raspberry Pi 4 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi4_practical_labs document.
+•	Raspberry Pi 3 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi3_practical_labs document.
 
-Since the end of October 2020, a new lab has been added to the labs of Chapter 7, that explains how to create pinctrl and pwm controller drivers. The evaluation board based on the CY8C9520A device will be used to develop this driver. This new lab is included in the linux_5.4_CY8C9520A_pwm_pinctrl.zip file and can be downloaded from this GitHub repository. The CY8C9520A_pwm_pinctrl driver is explained in the Linux_5.4_STM32MP1_practical_labs document included in this repository.
+You will also need a PIXI™ CLICK from MIKROE for the LAB 11.5. The documentation of this board can be found at 
+https://www.mikroe.com/pixi-click
 
-Since the end of November 2020, the Linux drivers included in this book have been adapted to run on the Raspberry Pi 4 Model B and Raspberry Pi 3 Model B boards using the Linux kernel version 5.4 LTS. The kernel 5.4 modules developed for these boards are included in the linux_5.4_rpi4_drivers.zip and linux_5.4_rpi3_drivers.zip files and can be downloaded from this GitHub repository. The Practical Labs Setup are described in the Linux_5.4_rpi4_practical_labs and Linux_5.4_rpi3_practical_labs documents included in this repository. The new MAX11300, CY8C9520A and CY8C9520A_pwm_pinctrl drivers have been ported to the Raspberry Pi 4 Model B and Raspberry Pi 3 Model B boards using kernel 5.4 and are included in the linux_5.4_rpi4_drivers.zip and linux_5.4_rpi3_drivers.zip files.
+Since the beginning of October 2020, a new LAB 7.4 has been added to the labs of Chapter 7 to reinforce the concepts of creating NESTED THREADED GPIO irqchips drivers, and apply in a practical way how to create a gpio controller with interrupt capabilities. You will also develop an user application that request GPIO interrupts from user space using GPIOlib APIs. This new lab can be downloaded from this GitHub repository. You can choose between several processor boards to execute this LAB 7.4:
+
+•	STM32MP157C-DK2 board from ST: The instructions to execute this lab are included in the Linux_5.4_STM32MP1_practical_labs document.
+•	Raspberry Pi 4 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi4_practical_labs document.
+•	Raspberry Pi 3 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi3_practical_labs document.
+
+You will also need an EXPAND 6 Click from MIKROE for the LAB 7.4. The documentation of this board can be found at 
+https://www.mikroe.com/expand-6-click
+
+Since the end of October 2020, a new LAB 7.5 has been added to the labs of Chapter 7, that explains how to create pinctrl and pwm controller drivers. You will use the same boards of the LAB 7.4 to develop this driver.
+
+Since the end of November 2020, the Linux drivers included in this book have been adapted to run on the Raspberry Pi 4 Model B and Raspberry Pi 3 Model B boards using the Linux kernel version 5.4 LTS. The kernel 5.4 modules developed for these boards are included in the linux_5.4_rpi4_drivers.zip and linux_5.4_rpi3_drivers.zip files and can be downloaded from this GitHub repository. The Practical Labs Setup are described in the Linux_5.4_rpi4_practical_labs and Linux_5.4_rpi3_practical_labs documents included in this repository. 
+
+Since the beginning of January 2021, a new LAB 10.3 has been added to the labs of Chapter 10 to reinforce the concepts of creating Input Subsystem drivers.This lab can be downloaded from the Github repository of this book. You can choose between several processor boards to execute this LAB 10.3:
+
+•	Raspberry Pi 4 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi4_practical_labs document.
+•	Raspberry Pi 3 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi3_practical_labs document.
+
+You will also need the the MOD-Wii-UEXT-NUNCHUCK from Olimex for the LAB 10.3. The documentation of this board can be found at 
+https://www.olimex.com/Products/Modules/Sensors/MOD-WII/MOD-Wii-UEXT-NUNCHUCK/open-source-hardware
+
+Since the beginning of January 2021, a new LAB 11.6 has been added to the labs of Chapter 11. This lab will explain in detail how to develop “provider” and “consumer” drivers. You will use the same boards of the LAB 10.3 to develop this driver.
 
 The document "Practical Labs Hardware" has been added to the github to detail all the needed hardware to test the lab examples included in this book.
 
