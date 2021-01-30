@@ -56,7 +56,9 @@ Since the end of July 2020, the Linux drivers included in this book have been ad
 Since the beginning of September 2020, a new LAB 11.5 has been added to the labs of Chapter 11 to reinforce the concepts of creating IIO drivers, and apply in a practical way the creation of a gpio controller driver, reinforcing thus the theory developed during Chapter 11. This new driver will control the Maxim MAX11300 PIXI device. This lab can be downloaded from the Github repository of this book. In this lab, you will also see how to write applications to control GPIOs by using two different methods. The first method will control the GPIO using a device node and the second method will control the GPIO using the functions of the libgpiod library. You will learn how to configure Eclipse to build and debug these applications. You can choose between several processor boards to execute this lab:
 
 •	STM32MP157C-DK2 board from ST: The instructions to execute this lab are included in the Linux_5.4_STM32MP1_practical_labs document.
+
 •	Raspberry Pi 4 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi4_practical_labs document.
+
 •	Raspberry Pi 3 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi3_practical_labs document.
 
 You will also need a PIXI™ CLICK from MIKROE for the LAB 11.5. The documentation of this board can be found at 
@@ -65,7 +67,9 @@ https://www.mikroe.com/pixi-click
 Since the beginning of October 2020, a new LAB 7.4 has been added to the labs of Chapter 7 to reinforce the concepts of creating NESTED THREADED GPIO irqchips drivers, and apply in a practical way how to create a gpio controller with interrupt capabilities. You will also develop an user application that request GPIO interrupts from user space using GPIOlib APIs. This new lab can be downloaded from this GitHub repository. You can choose between several processor boards to execute this LAB 7.4:
 
 •	STM32MP157C-DK2 board from ST: The instructions to execute this lab are included in the Linux_5.4_STM32MP1_practical_labs document.
+
 •	Raspberry Pi 4 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi4_practical_labs document.
+
 •	Raspberry Pi 3 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi3_practical_labs document.
 
 You will also need an EXPAND 6 Click from MIKROE for the LAB 7.4. The documentation of this board can be found at 
@@ -80,6 +84,7 @@ Since the beginning of January 2021, a new LAB 10.3 has been added to the labs o
 •	STM32MP157C-DK2 board from ST: The instructions to execute this lab are included in the Linux_5.4_STM32MP1_practical_labs document.
 
 •	Raspberry Pi 4 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi4_practical_labs document.
+
 •	Raspberry Pi 3 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi3_practical_labs document.
 
 You will also need the the MOD-Wii-UEXT-NUNCHUCK from Olimex for the LAB 10.3. The documentation of this board can be found at 
