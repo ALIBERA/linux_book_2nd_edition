@@ -77,6 +77,7 @@ Since the end of November 2020, the Linux drivers included in this book have bee
 
 Since the beginning of January 2021, a new LAB 10.3 has been added to the labs of Chapter 10 to reinforce the concepts of creating Input Subsystem drivers.This lab can be downloaded from the Github repository of this book. You can choose between several processor boards to execute this LAB 10.3:
 
+•	STM32MP157C-DK2 board from ST: The instructions to execute this lab are included in the Linux_5.4_STM32MP1_practical_labs document.
 •	Raspberry Pi 4 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi4_practical_labs document.
 •	Raspberry Pi 3 Model B: The instructions to execute this lab are included in the Linux_5.4_rpi3_practical_labs document.
 
