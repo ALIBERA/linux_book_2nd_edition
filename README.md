@@ -33,7 +33,7 @@ You have to replace the instructions in pag.34 of "Chapter 1 : Building the Syst
 
 ~/fsl-release-bsp$ git config --list
 
-~/fsl-release-bsp$ repo init -u https://source.codeaurora.org/external/imx/fsl-arm-yocto-bsp.git -b imx-morty -m imx-4.9.11-1.0.0_ga.xml
+~/fsl-release-bsp$ repo init -u https://source.codeaurora.org/external/imx/fsl-arm-yocto-bsp -b imx-morty -m imx-4.9.11-1.0.0_ga.xml
 
 ~/fsl-release-bsp$ repo sync -j4
 
