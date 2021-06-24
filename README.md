@@ -43,7 +43,7 @@ You have to replace the instructions in pag.34 of "Chapter 1 : Building the Syst
 
 And this is the instruction to download the kernel sources:
 
-~$ git clone https://source.codeaurora.org/external/imx/linux-imx -b imx_4.9.11_1.0.0
+~$ git clone https://source.codeaurora.org/external/imx/linux-imx -b imx_4.9.11_1.0.0_ga
 
 Since the beginning of March 2020, the Linux drivers included in this book have been adapted to run on the NXP i.MX 7Dual MCIMX7SABRE board using Linux kernel v4.19 LTS. The NXP i.MX 7Dual Linux drivers and device tree settings are included in the linux_4.19_imx7_drivers.zip file, which can be downloaded from the Github repository of this book. The NXP i.MX 7Dual Practical Labs Setup is described in the Linux_4.19_i.MX7D_practical_labs document included in this repository.
 
