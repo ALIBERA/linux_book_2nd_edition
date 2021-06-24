@@ -33,19 +33,17 @@ You have to replace the instructions in pag.34 of "Chapter 1 : Building the Syst
 
 ~/fsl-release-bsp$ git config --list
 
-~/fsl-release-bsp$ repo init -u https://source.codeaurora.org/external/imx/fsl-arm-yocto-bsp -b imx-morty -m imx-4.9.11-1.0.0_ga.xml
+~/fsl-release-bsp$ repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.11-1.0.0_ga.xml
 
 ~/fsl-release-bsp$ repo sync -j4
 
 ~/fsl-release-bsp$ DISTRO=fsl-imx-x11 MACHINE=imx7dsabresd source fsl-setup-release.sh -b build_imx7d
 
-Replace IMX_FIRMWARE_SRC variable in the recipe “firmware-imx_6.0.bb”: 
-
-~$ gedit  ~/fsl-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/recipes-bsp/firmware-imx/firmware-imx_6.0.bb
-
-IMX_FIRMWARE_SRC ?= "git://github.com/NXP/imx-firmware;protocol=git"
-
 ~/fsl-release-bsp/build_imx7d$ bitbake fsl-image-validation-imx
+
+And this is the instruction to download the kernel sources:
+
+~$ git clone https://source.codeaurora.org/external/imx/linux-imx -b imx_4.9.11_1.0.0
 
 Since the beginning of March 2020, the Linux drivers included in this book have been adapted to run on the NXP i.MX 7Dual MCIMX7SABRE board using Linux kernel v4.19 LTS. The NXP i.MX 7Dual Linux drivers and device tree settings are included in the linux_4.19_imx7_drivers.zip file, which can be downloaded from the Github repository of this book. The NXP i.MX 7Dual Practical Labs Setup is described in the Linux_4.19_i.MX7D_practical_labs document included in this repository.
 
