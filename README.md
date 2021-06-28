@@ -20,12 +20,19 @@ https://source.codeaurora.org/external/imx/imx-manifest/about/
 The following instructions have been tested on an Ubuntu 16.04 64-bit distribution.
 
 Install python 3.6 in your Ubuntu 16.04 64-bit distribution using the following instructions: 
+
 ~$ sudo add-apt-repository ppa:deadsnakes/ppa
+
 ~$ sudo apt-get update
+
 ~$ sudo apt-get install python3.6
+
 ~$ sudo apt install python3-pip
+
 ~$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+
 ~$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
+
 ~$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 3
 
 Now, you can use python 2.7, 3.5 and 3.6 in your machine. The default python version is 3.6.
@@ -46,6 +53,8 @@ The following code shows how to download the NXP Yocto BSP recipe layers. For th
 
 ~/fsl-release-bsp$ repo sync -j4
 
+Before starting the build, it must be initialized:
+
 ~/fsl-release-bsp$ DISTRO=fsl-imx-x11 MACHINE=imx7dsabresd source fsl-setup-release.sh -b build_imx7d
 
 Now, replace IMX_FIRMWARE_SRC variable in the recipe "firmware-imx_6.0.bb" with the following line of code to avoid errors during the building:
@@ -57,6 +66,8 @@ IMX_FIRMWARE_SRC ?= "git://github.com/NXP/imx-firmware;protocol=git"
 You have to change the python version from 3.6 to 2.7 to build the image. Execute the following commands and enter 1 (2.7 version):
 
 ~$ sudo update-alternatives --config python
+
+You may now build the Linux image:
 
 ~/fsl-release-bsp/build_imx7d$ bitbake fsl-image-validation-imx
 
