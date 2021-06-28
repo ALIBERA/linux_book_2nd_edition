@@ -74,7 +74,9 @@ You may now build the Linux image:
 If you still get errors in the imx-firmware during the building, then execute the following instructions:
 
 bitbake firmware-imx -c cleanall
+
 bitbake firmware-imx
+
 bitbake fsl-image-validation-imx
 
 And this is the instruction to download the kernel sources:
