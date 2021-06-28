@@ -9,19 +9,28 @@ Since the end of March 2019, a new chapter and an appendix have been added to th
 
 Since the end of November 2019, the Linux drivers included in this book have been adapted to run on the Raspberry Pi 4 Model B board using Linux kernel version 4.19. The kernel 4.19 modules developed for the Raspberry Pi 4 Model B board are included in the linux_4.19_rpi4_drivers.zip file and can be downloaded from this GitHub repository. The Raspberry Pi 4 Practical Labs Setup is described in the Linux_4.9_RaspberryPi4_practical_labs document included in this repository.
 
-The repository git.freescale.com is not working anymore, all content was migrated to either one of these repositories:
-
-github.com/NXP
-
-github.com/NXPMicro
+The repository git.freescale.com is not working anymore. Since June 30, 2021 the new building instructions for the NXP i.MX7 SoC have been updated in the text of this book. If the book was acquired prior to that date and you are using the kernel 4.9, you must replace the instructions of the page 34 of "Chapter 1: Building the System" with the following instructions. You can also use the kernel 4.19 to test the labs, following the instructions included in the Linux_4.19_i.MX7D_practical_labs file that can be downloaded from this GitHub.
 
 https://source.codeaurora.org/external/imx/
 
-Following the next i.MX Release Manifest:
+NXP i.MX Release Manifest:
 
 https://source.codeaurora.org/external/imx/imx-manifest/about/
 
-You have to replace the instructions in pag.34 of "Chapter 1 : Building the System" for the next ones:
+The following instructions have been tested on an Ubuntu 16.04 64-bit distribution.
+
+Install python 3.6 in your Ubuntu 16.04 64-bit distribution using the following instructions: 
+~$ sudo add-apt-repository ppa:deadsnakes/ppa
+~$ sudo apt-get update
+~$ sudo apt-get install python3.6
+~$ sudo apt install python3-pip
+~$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+~$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
+~$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 3
+
+Now, you can use python 2.7, 3.5 and 3.6 in your machine. The default python version is 3.6.
+
+The following code shows how to download the NXP Yocto BSP recipe layers. For this building, a directory called "fsl-release-bsp" is created:
 
 ~$ mkdir fsl-release-bsp
 
@@ -38,6 +47,16 @@ You have to replace the instructions in pag.34 of "Chapter 1 : Building the Syst
 ~/fsl-release-bsp$ repo sync -j4
 
 ~/fsl-release-bsp$ DISTRO=fsl-imx-x11 MACHINE=imx7dsabresd source fsl-setup-release.sh -b build_imx7d
+
+Now, replace IMX_FIRMWARE_SRC variable in the recipe "firmware-imx_6.0.bb" with the following line of code to avoid errors during the building:
+
+~$ gedit ~/fsl-release-bsp/sources/meta-fsl-bsp-release/imx/meta-bsp/recipes-bsp/firmware-imx/firmware-imx_6.0.bb
+
+IMX_FIRMWARE_SRC ?= "git://github.com/NXP/imx-firmware;protocol=git"
+
+You have to change the python version from 3.6 to 2.7 to build the image. Execute the following commands and enter 1 (2.7 version):
+
+~$ sudo update-alternatives --config python
 
 ~/fsl-release-bsp/build_imx7d$ bitbake fsl-image-validation-imx
 
