@@ -71,6 +71,12 @@ You may now build the Linux image:
 
 ~/fsl-release-bsp/build_imx7d$ bitbake fsl-image-validation-imx
 
+If you still get errors in the imx-firmware during the building, then execute the following instructions:
+
+bitbake firmware-imx -c cleanall
+bitbake firmware-imx
+bitbake fsl-image-validation-imx
+
 And this is the instruction to download the kernel sources:
 
 ~$ git clone https://source.codeaurora.org/external/imx/linux-imx -b imx_4.9.11_1.0.0_ga
