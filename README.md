@@ -9,13 +9,9 @@ Since the end of March 2019, a new chapter and an appendix have been added to th
 
 Since the end of November 2019, the Linux drivers included in this book have been adapted to run on the Raspberry Pi 4 Model B board using Linux kernel version 4.19. The kernel 4.19 modules developed for the Raspberry Pi 4 Model B board are included in the linux_4.19_rpi4_drivers.zip file and can be downloaded from this GitHub repository. The Raspberry Pi 4 Practical Labs Setup is described in the Linux_4.9_RaspberryPi4_practical_labs document included in this repository.
 
-The repository git.freescale.com is not working anymore. Since June 30, 2021 the new building instructions for the NXP i.MX7 SoC have been updated in the text of this book. If the book was acquired prior to that date and you are using the kernel 4.9, you must replace the instructions of the page 34 of "Chapter 1: Building the System" with the following instructions. You can also use the kernel 4.19 to test the labs, following the instructions included in the Linux_4.19_i.MX7D_practical_labs file that can be downloaded from this GitHub.
+Since March 2023 source.codeaurora.org is closed. NXP is migrating from CodeAurora to GitHub. Now, you can find any source code at the following link: https://github.com/nxp-imx
 
-https://source.codeaurora.org/external/imx/
-
-NXP i.MX Release Manifest:
-
-https://source.codeaurora.org/external/imx/imx-manifest/about/
+In the page 34 of "Chapter 1: Building the System" you must replace the instruction: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-morty -m imx-4.9.11-1.0.0_ga.xml with the new instruction: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-morty -m imx-4.9.11-1.0.0_ga.xml
 
 The following instructions have been tested on an Ubuntu 16.04 64-bit distribution.
 
@@ -49,7 +45,7 @@ The following code shows how to download the NXP Yocto BSP recipe layers. For th
 
 ~/fsl-release-bsp$ git config --list
 
-~/fsl-release-bsp$ repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.11-1.0.0_ga.xml
+~/fsl-release-bsp$ repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-morty -m imx-4.9.11-1.0.0_ga.xml
 
 ~/fsl-release-bsp$ repo sync -j4
 
@@ -81,7 +77,7 @@ If you still get errors in the imx-firmware during the building, then execute th
 
 And this is the instruction to download the kernel sources:
 
-~$ git clone https://source.codeaurora.org/external/imx/linux-imx -b imx_4.9.11_1.0.0_ga
+~$ git clone https://github.com/nxp-imx/linux-imx -b imx_4.9.11_1.0.0_ga
 
 Since the beginning of March 2020, the Linux drivers included in this book have been adapted to run on the NXP i.MX 7Dual MCIMX7SABRE board using Linux kernel v4.19 LTS. The NXP i.MX 7Dual Linux drivers and device tree settings are included in the linux_4.19_imx7_drivers.zip file, which can be downloaded from the Github repository of this book. The NXP i.MX 7Dual Practical Labs Setup is described in the Linux_4.19_i.MX7D_practical_labs document included in this repository.
 
