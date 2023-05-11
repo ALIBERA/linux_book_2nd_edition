@@ -81,7 +81,7 @@ If you still get errors in the imx-firmware during the building, then execute th
 
 ~/fsl-release-bsp/build_imx7d$ bitbake fsl-image-validation-imx
 
-And this is the instruction to download the kernel sources:
+And this is the new instruction to download the kernel sources:
 
 ~$ git clone https://github.com/nxp-imx/linux-imx -b imx_4.9.11_1.0.0_ga
 
